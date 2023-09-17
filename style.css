@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
+:root{
+  font-family: 'Tektur', cursive;
+  font-size: 16px;
+  /* Color Palette */
+  --green1: #00181a;
+  --green2:	#00585a;
+  --green3: #00989b;
+  --grey1: #99a2a1;
+  --grey2: #dcdedd;
+}
+
+body{
+  background-color: var(--green1);
+  color: var(--grey2);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: var(--green2);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--green3);
+}
+
+.nav-label{
+  font-size: 30px;
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  float: left;
+  margin-left: 1rem;
+}
+
+.navbar{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 3rem;
+  margin-right: 2rem;
+}
+
+.nav-items{
+  text-decoration: none;
+  color: var(--grey2);
+  font-size: 20px;
+  padding: 2px;
+}
+
+a:hover{
+  font-size: larger;
+}
+
+main{
+  margin: 2rem;
+  padding: 1rem;
+}
+
