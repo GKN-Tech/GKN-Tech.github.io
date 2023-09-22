@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Tektur:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 :root{
   font-family: 'Roboto Slab', serif;
@@ -118,12 +119,12 @@ body::-webkit-scrollbar-thumb{
   display: grid;
   position: absolute;
   top: 5rem;
-  bottom: 6rem;
+  bottom: 5rem;
   left: 1rem;
   width: 90%;
   padding: 2rem;
-  grid-template-columns: 5fr 2fr 2fr 4fr;
-  grid-template-rows: 20px 4fr auto 2fr 2fr 20px;
+  grid-template-columns: 2fr 2fr 2fr 4fr;
+  grid-template-rows: 20px 2fr 2fr auto 2fr 2fr 20px;
   justify-content: center;
   align-content: center;
   row-gap: 10px;
@@ -134,25 +135,20 @@ body::-webkit-scrollbar-thumb{
   background-color:var(--green1);  
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5); 
   z-index: -3;
-  grid-area: 1/1/7/4;
+  grid-area: 1/1/8/4;
 }
 
 .background-box2{
   background-color:var(--white);
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   z-index: -2;
-  grid-area: 2/2/6/5;
-}
-
-.strip{
-  z-index: -1;
-  grid-area: 5/2/6/4;
+  grid-area: 2/2/7/5;
 }
 
 .headshot-img{
   border-radius: 50%;
   overflow: hidden;
-  width: 120px;
+  width: 130px;
   padding-top: 0.5rem;
 }
 
@@ -164,33 +160,96 @@ body::-webkit-scrollbar-thumb{
 }
 
 .headshot{
-  grid-area: 2/2/3/4;
+  grid-area: 2/2/4/4;
   justify-self: center;
   align-self:center;
 }
 
 .name{
-  grid-area: 3/2/4/4;
+  grid-area: 4/2/5/4;
   justify-self: center;
+  font-size: large;
+  text-decoration: underline;
+  text-underline-offset: 20px;
 }
 
 .it{
   text-transform: uppercase;
-  grid-area: 4/2/5/4;
+  grid-area: 5/2/6/4;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.linkedin-icon{
+  grid-area: 6/2/7/3;
+  justify-self:end;
+  align-self: center;
+  padding-right: 20px;
+}
+
+.github-icon{
+  grid-area: 6/3/7/4;
+  justify-self: start;
+  align-self: center;
+  padding-left: 20px;
+}
+
+.hello{
+  grid-area: 2/4/3/5;
+  padding-top: 0.5rem;
+  font-size: xx-large;
+  font-weight: bolder;
   justify-self: center;
   align-self: center;
 }
 
-.linkedin-icon{
-  grid-area: 5/2/6/3;
-  justify-self:end;
+.resume{
+  grid-area: 3/4/4/5;
+  justify-self: center;
   align-self: center;
 }
 
-.github-icon{
-  grid-area: 5/3/6/4;
-  justify-self: start;
+.btn{
+  background-color: var(--green1);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: dodgerblue;
+}
+
+.summary{
+  grid-area: 4/4/7/5;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  word-wrap: normal;
+  justify-self: center;
   align-self: center;
+  font-weight: lighter;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 0.5rem;
+}
+
+.contact-links{
+  text-decoration: none;
+  color: var(--green1);
+}
+
+.contact-links:hover {
+  color: dodgerblue;
 }
 
 #hamburger-icon {
